@@ -1,0 +1,26 @@
+{
+  "name": "vue-nuxt",
+  "version": "1.0.0",
+  "description": "My grand Nuxt.js project",
+  "author": "lsiten",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.4.1",
+    "cross-env": "^5.2.0",
+    "hapi-nuxt": "^1.0.1",
+    "iview": "3.1.5",
+    "nuxt": "^2.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/pwa": "^3.0.0-beta.14",
+    "@nuxtjs/workbox": "^3.0.0-beta.14",
+    "nodemon": "^1.18.9",
+    "workbox-cdn": "^4.3.0"
+  }
+}
